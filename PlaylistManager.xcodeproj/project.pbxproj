@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDC6A13C2BC5662A00C52B9D /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC6A13B2BC5662A00C52B9D /* AudioPlayer.swift */; };
 		CDC9E1D62BBBFD0F008818B2 /* PlaylistManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E1D52BBBFD0F008818B2 /* PlaylistManagerApp.swift */; };
 		CDC9E1D82BBBFD0F008818B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E1D72BBBFD0F008818B2 /* ContentView.swift */; };
 		CDC9E1DA2BBBFD10008818B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC9E1D92BBBFD10008818B2 /* Assets.xcassets */; };
@@ -14,6 +15,10 @@
 		CDC9E1E72BBBFD10008818B2 /* PlaylistManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E1E62BBBFD10008818B2 /* PlaylistManagerTests.swift */; };
 		CDC9E1F12BBBFD10008818B2 /* PlaylistManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E1F02BBBFD10008818B2 /* PlaylistManagerUITests.swift */; };
 		CDC9E1F32BBBFD10008818B2 /* PlaylistManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E1F22BBBFD10008818B2 /* PlaylistManagerUITestsLaunchTests.swift */; };
+		CDC9E2002BBBFEE6008818B2 /* PlaylistCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E1FF2BBBFEE6008818B2 /* PlaylistCardView.swift */; };
+		CDC9E2032BBC00A1008818B2 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E2022BBC00A1008818B2 /* Playlist.swift */; };
+		CDC9E2082BBC199B008818B2 /* PlaylistGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E2072BBC199A008818B2 /* PlaylistGroupView.swift */; };
+		CDC9E20A2BBC1A79008818B2 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC9E2092BBC1A79008818B2 /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CDC2E1732BC90C930060F23C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CDC6A13B2BC5662A00C52B9D /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		CDC9E1D22BBBFD0F008818B2 /* PlaylistManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9E1D52BBBFD0F008818B2 /* PlaylistManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistManagerApp.swift; sourceTree = "<group>"; };
 		CDC9E1D72BBBFD0F008818B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,10 @@
 		CDC9E1EC2BBBFD10008818B2 /* PlaylistManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC9E1F02BBBFD10008818B2 /* PlaylistManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistManagerUITests.swift; sourceTree = "<group>"; };
 		CDC9E1F22BBBFD10008818B2 /* PlaylistManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDC9E1FF2BBBFEE6008818B2 /* PlaylistCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCardView.swift; sourceTree = "<group>"; };
+		CDC9E2022BBC00A1008818B2 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		CDC9E2072BBC199A008818B2 /* PlaylistGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistGroupView.swift; sourceTree = "<group>"; };
+		CDC9E2092BBC1A79008818B2 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDC6A13A2BC5661500C52B9D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDC6A13B2BC5662A00C52B9D /* AudioPlayer.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CDC9E1C92BBBFD0F008818B2 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +113,10 @@
 		CDC9E1D42BBBFD0F008818B2 /* PlaylistManager */ = {
 			isa = PBXGroup;
 			children = (
+				CDC2E1732BC90C930060F23C /* Info.plist */,
+				CDC6A13A2BC5661500C52B9D /* Services */,
+				CDC9E2062BBC1902008818B2 /* Views */,
+				CDC9E2012BBC0096008818B2 /* Models */,
 				CDC9E1D52BBBFD0F008818B2 /* PlaylistManagerApp.swift */,
 				CDC9E1D72BBBFD0F008818B2 /* ContentView.swift */,
 				CDC9E1D92BBBFD10008818B2 /* Assets.xcassets */,
@@ -125,6 +148,24 @@
 				CDC9E1F22BBBFD10008818B2 /* PlaylistManagerUITestsLaunchTests.swift */,
 			);
 			path = PlaylistManagerUITests;
+			sourceTree = "<group>";
+		};
+		CDC9E2012BBC0096008818B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9E2022BBC00A1008818B2 /* Playlist.swift */,
+				CDC9E2092BBC1A79008818B2 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDC9E2062BBC1902008818B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDC9E1FF2BBBFEE6008818B2 /* PlaylistCardView.swift */,
+				CDC9E2072BBC199A008818B2 /* PlaylistGroupView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC9E20A2BBC1A79008818B2 /* Song.swift in Sources */,
 				CDC9E1D82BBBFD0F008818B2 /* ContentView.swift in Sources */,
+				CDC9E2002BBBFEE6008818B2 /* PlaylistCardView.swift in Sources */,
+				CDC9E2082BBC199B008818B2 /* PlaylistGroupView.swift in Sources */,
+				CDC6A13C2BC5662A00C52B9D /* AudioPlayer.swift in Sources */,
 				CDC9E1D62BBBFD0F008818B2 /* PlaylistManagerApp.swift in Sources */,
+				CDC9E2032BBC00A1008818B2 /* Playlist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +468,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlaylistManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 56HRAPS4XW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaylistManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +498,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PlaylistManager/Preview Content\"";
+				DEVELOPMENT_TEAM = 56HRAPS4XW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlaylistManager/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
